@@ -9,20 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var navigationId = UUID()
+    @State var isActive : Bool = false
+   
     
     
     var body: some View {
     
         NavigationView {
             VStack  {
-                Text("This is the Content View 1")
-                NavigationLink("Show Screen 2", destination: DetailView2())
+                NavigationLink("Go to DetailView(One)",
+                               destination: DetailView(rootIsActive: self.$isActive), //sempre que for pra lá esas var deve ser falsa
+                               isActive: self.$isActive //ATENCAO NESSA LINHA...
+                               )
+                
             }
-        }
-        .id(navigationId)
-        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("popToRootView"))) { output in
-            navigationId = UUID()
+            .navigationBarTitle("Content View")
+//            .isDetailLink(false)
+           
         }
     }
 }

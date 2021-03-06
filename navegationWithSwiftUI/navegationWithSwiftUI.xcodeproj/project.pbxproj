@@ -16,7 +16,6 @@
 		17DA11C7257AC90E00DC5C60 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DA11C6257AC90E00DC5C60 /* DetailView.swift */; };
 		17DA11CA257ACC3B00DC5C60 /* DetailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DA11C9257ACC3B00DC5C60 /* DetailView2.swift */; };
 		17FD97B125F3C30D005E2A4A /* DetailView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD97B025F3C30D005E2A4A /* DetailView3.swift */; };
-		17FD97B425F3C318005E2A4A /* DetailView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD97B325F3C318005E2A4A /* DetailView4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		17DA11C6257AC90E00DC5C60 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		17DA11C9257ACC3B00DC5C60 /* DetailView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView2.swift; sourceTree = "<group>"; };
 		17FD97B025F3C30D005E2A4A /* DetailView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView3.swift; sourceTree = "<group>"; };
-		17FD97B325F3C318005E2A4A /* DetailView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 				17DA11C6257AC90E00DC5C60 /* DetailView.swift */,
 				17DA11C9257ACC3B00DC5C60 /* DetailView2.swift */,
 				17FD97B025F3C30D005E2A4A /* DetailView3.swift */,
-				17FD97B325F3C318005E2A4A /* DetailView4.swift */,
 			);
 			path = navegationWithSwiftUI;
 			sourceTree = "<group>";
@@ -162,7 +159,6 @@
 				17DA11B4257ABA1D00DC5C60 /* SceneDelegate.swift in Sources */,
 				17FD97B125F3C30D005E2A4A /* DetailView3.swift in Sources */,
 				17DA11CA257ACC3B00DC5C60 /* DetailView2.swift in Sources */,
-				17FD97B425F3C318005E2A4A /* DetailView4.swift in Sources */,
 				17DA11B6257ABA1D00DC5C60 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
