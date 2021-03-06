@@ -21,10 +21,11 @@ struct ContentView: View {
                                destination: DetailView(rootIsActive: self.$isActive), //sempre que for pra lá esas var deve ser falsa
                                isActive: self.$isActive //ATENCAO NESSA LINHA...
                                )
+                            .isDetailLink(false)
                 
             }
             .navigationBarTitle("Content View")
-//            .isDetailLink(false)
+
            
         }
     }

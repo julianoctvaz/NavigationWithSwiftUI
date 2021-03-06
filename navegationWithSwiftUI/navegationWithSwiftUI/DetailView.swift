@@ -21,6 +21,9 @@ struct DetailView: View {
 //                               ,
 //                               isActive: self.$isActive2 //A QUE QUE EU FACO A MUDANCA...
                 )
+            
+            //coisa 2
+                
 //                .id(navigationId)
 //                .onReceive(NotificationCenter.default.publisher(for: Notification.Name("popToDetailView"))) { output in
 //                    navigationId = UUID()}
@@ -28,6 +31,7 @@ struct DetailView: View {
                 
         }
         .navigationBarTitle("Detail View")
+        
 //            .id(navigationId)
 //            .onReceive(NotificationCenter.default.publisher(for: Notification.Name("popToDetailView"))) { output in
 //                navigationId = UUID()}
