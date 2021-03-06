@@ -17,7 +17,7 @@ struct ContentView: View {
         NavigationView {
             VStack  {
                 Text("This is the Content View 1")
-                NavigationLink("Show Screen 2", destination: DetailView2())
+                NavigationLink("Show DetailView 2", destination: DetailView())
             }
         }
         .id(navigationId)

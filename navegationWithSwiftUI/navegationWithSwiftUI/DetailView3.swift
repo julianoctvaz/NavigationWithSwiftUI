@@ -9,10 +9,12 @@ import SwiftUI
 
 struct DetailView3: View {
     
+    @Binding var rootIsActive : Bool
+    
     var body: some View {
-        VStack {
+        VStack{
             Text("This is Detail View 3")
-            NavigationLink("Show Screen 4", destination: DetailView4())
+            NavigationLink("Show Detail View 4", destination: DetailView4(shouldPopToRootView:  self.$rootIsActive))
             Button("Go to Home") {
                 NotificationCenter.default.post(name: Notification.Name("popToRootView"), object: nil)
             }
@@ -20,8 +22,8 @@ struct DetailView3: View {
     }
 }
 
-struct DetailView3_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView3()
-    }
-}
+//struct DetailView3_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailView3(rootIsActive: <#Binding<Bool>#>)
+//    }
+//}

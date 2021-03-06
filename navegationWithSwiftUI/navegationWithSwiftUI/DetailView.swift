@@ -9,10 +9,14 @@ import SwiftUI
 
 struct DetailView: View {
     
+    @State var isActive: Bool = false
+    
     var body: some View {
             VStack {
-                Text("This is screen 1")
-                NavigationLink("Show Screen 2", destination: DetailView2())
+                Text("This is Detail View 1")
+                NavigationLink("Show Detail View 2", destination: DetailView2(rootIsActive: self.$isActive),
+                               isActive: self.$isActive)
+                    .isDetailLink(false)
         }
     }
     
