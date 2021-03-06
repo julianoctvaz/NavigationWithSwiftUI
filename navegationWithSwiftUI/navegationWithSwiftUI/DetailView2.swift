@@ -9,30 +9,27 @@ import SwiftUI
 
 struct DetailView2: View {
 
-    @State private var fullScreen: Bool = false
+    @State private var navigationIdToDetailView2 = UUID()
     
     var body: some View {
         
-        VStack{
-            
-            Text("Hello to detail view 2!")
-        
-            NavigationView{
-                Button("Toggle full screen"){
-                    self.fullScreen.toggle()
+            VStack {
+                Text("This is Detail View 2")
+                NavigationLink("Show Screen 3", destination: DetailView3())
+                Button("Go to Home") {
+                    NotificationCenter.default.post(name: Notification.Name("popToRootView"), object: nil)
                 }
-                .navigationBarTitle("Full Screen Title")
-                .navigationBarHidden(fullScreen)
-               
+                Button("Go to DetailView4") {
+                    NotificationCenter.default.post(name: Notification.Name("popToDetailView4"), object: nil)
+                }
             }
-         
-//            .statusBar(hidden: fullScreen)
-                
+        
+        .id(navigationIdToDetailView2)
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("popToDetailView2"))) { output in
+            navigationIdToDetailView2 = UUID()
         }
-        .foregroundColor(Color(.red))
-        .background(Color(.green))
-  
     }
+    
 }
 
 struct DetailView2_Previews: PreviewProvider {

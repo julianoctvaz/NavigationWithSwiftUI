@@ -8,21 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var navigationId = UUID()
+    
+    
     var body: some View {
     
         NavigationView {
-            
-            NavigationLink(destination: DetailView()) {
-                
-                Text("Vamos para tela de detalhes")
-                    .foregroundColor(.blue)
-                
+            VStack  {
+                Text("This is the Content View 1")
+                NavigationLink("Show Screen 2", destination: DetailView2())
             }
-            .buttonStyle(PlainButtonStyle())
+        }
+        .id(navigationId)
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("popToRootView"))) { output in
+            navigationId = UUID()
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
