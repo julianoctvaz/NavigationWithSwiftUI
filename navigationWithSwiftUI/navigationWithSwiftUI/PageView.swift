@@ -11,7 +11,9 @@ struct PageView: View {
     
     //MARK: - Properties
     //    @Environment(\.presentationMode) var presentation: Binding<PresentationMode> // deprecated
-    @Environment(\.presentationMode) var presentation
+//    @Environment(\.presentationMode) @Binding var presentation // mode 1
+
+    @Environment(\.presentationMode) var presentation // mode 2
     
     var body: some View {
         ZStack{
@@ -21,7 +23,8 @@ struct PageView: View {
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .background(Color.pink)
                     Button("Voltar", //case 1
-                           action: { presentation.wrappedValue.dismiss() }
+//                           action: { presentation.dismiss() } //mode 1
+                           action: { presentation.wrappedValue.dismiss() } //mode 2
                     )
                 }
                 
