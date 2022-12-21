@@ -19,5 +19,7 @@ https://www.hackingwithswift.com/articles/216/complete-guide-to-navigationview-i
  [https://medium.com/swlh/swiftui-tutorial-lists-and-navigation-16e1b4dbb98b](https://medium.com/swlh/swiftui-tutorial-lists-and-navigation-16e1b4dbb98b)
  
  [https://swiftwithmajid.com/2019/07/24/alerts-actionsheets-modals-and-popovers-in-swiftui/](https://swiftwithmajid.com/2019/07/24/alerts-actionsheets-modals-and-popovers-in-swiftui/)
+ 
+ [https://developer.apple.com/design/human-interface-guidelines/components/presentation/popovers/](https://developer.apple.com/design/human-interface-guidelines/components/presentation/popovers/) (See about sheet, action sheet, page control, alerts too)
 
 
