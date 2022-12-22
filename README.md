@@ -22,4 +22,6 @@ https://www.hackingwithswift.com/articles/216/complete-guide-to-navigationview-i
  
  [https://developer.apple.com/design/human-interface-guidelines/components/presentation/popovers/](https://developer.apple.com/design/human-interface-guidelines/components/presentation/popovers/) (See about sheet, action sheet, page control, alerts too)
 
+[https://github.com/NilCoalescing/SwiftUI-Code-Examples/tree/main/SwiftUINavigation2022] (https://github.com/NilCoalescing/SwiftUI-Code-Examples/tree/main/SwiftUINavigation2022)
 
+[https://github.com/siteline/SwiftUI-Introspect] (https://github.com/siteline/SwiftUI-Introspect)
