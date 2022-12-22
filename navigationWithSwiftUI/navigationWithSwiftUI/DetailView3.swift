@@ -12,7 +12,7 @@ struct DetailView3: View {
     var body: some View {
         VStack {
             Text("This is Detail View 3")
-            NavigationLink("Show Screen 4", destination: DetailView4())
+            NavigationLink("Show Detail View 4", destination: DetailView4())
             Button("Go to Home") {
                 NotificationCenter.default.post(name: Notification.Name("popToRootView"), object: nil)
             }

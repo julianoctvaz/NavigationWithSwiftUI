@@ -12,11 +12,11 @@ struct ContentView: View {
     @State private var navigationId = UUID()
     
     var body: some View {
-    
+        
         NavigationView {
             VStack  {
-                Text("This is the Content View 1")
-                NavigationLink("Show Screen 2", destination: DetailView2())
+                Text("This is the Content View")
+                NavigationLink("Show Details View", destination: DetailView())
             }
         }
         .id(navigationId)
@@ -31,7 +31,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-      
+            
         }
     }
 }

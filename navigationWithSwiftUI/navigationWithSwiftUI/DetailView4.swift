@@ -10,19 +10,22 @@ import SwiftUI
 struct DetailView4: View {
     
     @State private var navigationIdToDetailView4 = UUID()
+    @Environment (\.presentationMode) @Binding var presentation
     
     var body: some View {
         
-            VStack {
-                Text("This is Detail View 4")
-                Button("Go to Detail View 2") {
-                    NotificationCenter.default.post(name: Notification.Name("popToDetailView2"), object: nil)
+        VStack {
+            Text("This is Detail View 4")
+            Button("Go to Detail View 2") {
+                NotificationCenter.default.post(name: Notification.Name("popToDetailView2"), object: nil)
+//                    presentation.dismiss()
+//                    presentation.dismiss()
                 }
-                Button("Go to ContentView") {
-                    NotificationCenter.default.post(name: Notification.Name("popToRootView"), object: nil)
-                }
+            
+            Button("Go to ContentView") {
+                NotificationCenter.default.post(name: Notification.Name("popToRootView"), object: nil)
             }
-        
+        }
         .id(navigationIdToDetailView4)
         .onReceive(NotificationCenter.default.publisher(for: Notification.Name("popToDetailView4"))) { output in
             navigationIdToDetailView4 = UUID()

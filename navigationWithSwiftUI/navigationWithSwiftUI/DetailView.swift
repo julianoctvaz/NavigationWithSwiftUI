@@ -10,9 +10,12 @@ import SwiftUI
 struct DetailView: View {
     
     var body: some View {
-            VStack {
-                Text("This is screen 1")
-                NavigationLink("Show Screen 2", destination: DetailView2())
+        VStack {
+            Text("This is Detail View")
+            NavigationLink("Show Detail View 2", destination: DetailView2())
+            Button("Go to Home") {
+                NotificationCenter.default.post(name: Notification.Name("popToRootView"), object: nil)
+            }
         }
     }
     
