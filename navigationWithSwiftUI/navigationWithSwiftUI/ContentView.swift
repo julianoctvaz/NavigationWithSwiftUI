@@ -11,7 +11,6 @@ struct ContentView: View {
     
     @State private var navigationId = UUID()
     
-    
     var body: some View {
     
         NavigationView {
@@ -25,6 +24,7 @@ struct ContentView: View {
             navigationId = UUID()
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

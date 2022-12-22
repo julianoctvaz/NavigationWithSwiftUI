@@ -28,6 +28,7 @@ struct DetailView4: View {
             navigationIdToDetailView4 = UUID()
         }
     }
+    
 }
 
 struct DetailView4_Previews: PreviewProvider {

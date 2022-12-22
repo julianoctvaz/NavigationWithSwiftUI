@@ -18,6 +18,7 @@ struct DetailView3: View {
             }
         }
     }
+    
 }
 
 struct DetailView3_Previews: PreviewProvider {
