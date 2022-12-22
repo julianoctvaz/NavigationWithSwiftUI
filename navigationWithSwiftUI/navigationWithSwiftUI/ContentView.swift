@@ -11,24 +11,22 @@ struct ContentView: View {
     
     @State var isActive : Bool = false
    
-    
-    
     var body: some View {
     
         NavigationView {
             VStack  {
-                NavigationLink("Go to DetailView(One)",
+                NavigationLink("Go to Detail View ",
                                destination: DetailView(rootIsActive: self.$isActive), //sempre que for pra lá esas var deve ser falsa
                                isActive: self.$isActive //ATENCAO NESSA LINHA...
                                )
-                            .isDetailLink(false)
+                            .isDetailLink(false) //usado mt com slip Ipad
                 
             }
             .navigationBarTitle("Content View")
-
-           
         }
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

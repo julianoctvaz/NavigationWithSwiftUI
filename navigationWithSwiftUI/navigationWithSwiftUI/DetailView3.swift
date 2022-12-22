@@ -9,9 +9,8 @@ import SwiftUI
 
 struct DetailView3: View {
     
-    @Binding var shouldPopToDetailView : Bool
-    @Binding var shouldPopToRootView : Bool
-//    @State private var navigationId = UUID()
+    @Binding var shouldPopToDetailView: Bool
+    @Binding var shouldPopToRootView: Bool
     
     var body: some View {
         VStack {
@@ -23,18 +22,14 @@ struct DetailView3: View {
                     NotificationCenter.default.post(name: Notification.Name("popToDetailView"), object: nil)
                 }
             ){
-                Text("Pop to DetailView(One)")
+                Text("Pop to Detail View 1")
             }
-            Button (
-                action: {
-                    self.shouldPopToRootView = false
-                    
-                    //                NotificationCenter.default.post(name: Notification.Name("popToRootView"), object: nil)
-                }
-            ){
+            Button (action: { self.shouldPopToRootView = false }) {
                 Text("Pop to root (Content View)")
             }
         }
+        .navigationTitle("Detail View 3")
+        
     }
 }
 //
